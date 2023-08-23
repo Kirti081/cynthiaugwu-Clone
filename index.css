@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* font-family: ; */
+    font-family: "General Sans";
 }
+html , body{
+    width: 100%;
+    height: 100%;
+}
+
 #miniCircle{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     height: 10px;
@@ -17,47 +22,44 @@
 #main{
     background-color: #000;
 }
-html , body{
-    width: 100%;
-    height: 100%;
-}
-.main{
-    background-color: black;
-    /* position: relative; */
-}
+
 .hero{
-    /* height: 100vh; */
-    width: 100%;
+    /* width: 100%; */
     background-color:#000; 
     color: white;
 }
+
 #nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 24px;
     color: white;
 }
+  
 #nav a{
     text-decoration: none;
     font-size: 18px;
     color: white;
+    font-weight: bold;
+}
+.menu{
+    font-size: 16px;
 }
 #heading{
     margin-top: 90px;
-    /* overflow-y: hidden !important; */
 }
 .loco{
     overflow-y: hidden;
 }
 #heading h1{
     
-    margin-left: 30px;
+    margin-left: 24px;
     font-size: 9vw;
     text-transform: uppercase;
     opacity: 0.6;
-    line-height: 1;
+    line-height: 0.9;
     font-weight: 900;
     overflow-y: hidden;
     /* height: auto; */
@@ -67,9 +69,6 @@ html , body{
 .product{
     width: fit-content;
 }
-#heading .secondText{
-    margin-left: 175px;
-}
 .blockText{
     width: fit-content;
     display: flex;
@@ -77,10 +76,17 @@ html , body{
     align-items: end;
 }
 
-.blockText h5{
-   text-align: right;
-   font-size: 15px;
+#heading .secondText{
+    margin-left: 125px;
 }
+
+
+.blockText .loco h5{
+   text-align: right;
+   font-size: 12px;
+}
+
+
 .sub-heading{
     margin-top: 100px;
     display: flex;
@@ -94,74 +100,99 @@ html , body{
     text-align: right;
 }
 .hero-footer{
-    width: 100%;
+    width: 100vw;
     display: flex;
     position: sticky;
-
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 2vw;
+    /* margin: 0px 0px 0px 24px; */
+    /* margin-right:auto; */
+    margin-left: 12px;
     align-items: center;
-    /* bottom: 3%; */
     margin-top: 40px;
-    /* margin-top: 3vh; */
-
+    background-color: black;
 }
 .hero-footer a{
     text-decoration: none;
     color: white;
-    /* transform: translateY(100%); */
+
 }
 .circle{
-    display: flex;
+
     color:white;
-    margin-right: 54px;
+    margin-right: 24px;
     overflow-y: hidden;
+    /* font-size: 14px; */
+
+}
+.firstfooter{
+    font-size: 14px;
+
+    width: fit-content;
+    transform: translateY(-200%);
+    /* overflow-y: hidden; */
 }
 .locoelem{
     width: fit-content;
     transform: translateY(100%);
     overflow-y: hidden;
 }
-.l1{
+/* .l1{
     width: fit-content;
     transform: translateY(-200%);
     overflow-y: hidden;
-}
+} */
 .second{
-    /* height: 100vh; */
-    width: 100%;
+    width: 100vw;
     background-color: black;
     padding-top: 100px;
     align-items: center;
     overflow-y: hidden;
     padding-bottom: 20px;
-    /* position: relative; */
+    gap: 10vw;
+  
 
 }
+/* .second{
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    overflow-x: hidden;
+} */
+/* .second .elem{
+    background: red;
+}
+.second .elem img{
+    display: none;
+} */
 .elem{
     width: 90%;
+    width: 96vw;
     color: white;
     opacity: 0.7;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 3.5vw;
+    
     border-top: 1px solid #888;
     padding: 30px 0px;
-    margin-left: 8vh;
+    
     position: relative;
     overflow-y: hidden;
+    margin: auto;
 
 }
-.elem h5{
-    font-size: large;
+.elem .sec-heading{
+    font-size: 3.5vw;
+}
+.elem .year{
+    font-size: 14px;
 }
 .elem-last{
     border-bottom: 1px solid #888;   
 }
 .elem img{
-    
+    display: none;
     height: 140%;
     opacity: 0;
     z-index: 9999;
@@ -170,58 +201,63 @@ html , body{
    
 }
 .about{
-    width: 100%;
+    /* width: 100vw; */
     background-color: #000;
     display: flex;
-    padding: 100px;
-    gap: 30px;
+    padding-top: 100px;
+    gap: 60px;
     align-items: center;
-    padding-left: 35vw;
-
+    padding-left: 20vw;
+    padding-right: 10vw;
+    padding-bottom: 5px;
+    
 }
 .about img{
-    width: 200px;
+    width: 235px;
+    height: 235px;
     border-radius: 50%;
-    float: left;
+    /* float: left; */
+    /* padding-left: 10vw; */
 
 }
 .about-me{
-    width: 50%;
-    line-height: 1.4;
+    max-width: 463px;
+    line-height: 1.6;
 }
-.about h6{
+.about span{
     opacity: 0.7;
+    font-size: 14px;
 }
-.about h6 , .about p{
+.about span , .about p{
     color: white;
     padding-bottom: 2px;
-  
+    
 }
-button{
+.about p{
+    font-size: 18px;
+}
+.let{
     padding: 10px;
     border-radius: 80px;
     background-color: black;
     color: white;
     border: 1px solid white;
+    font-size: 16px;
 }
-@media (max-width: 1051px) {
-    .about {
-      display: grid;
-      padding-left: 2vw;
-    }
-    .about-me{
-        width:90%;
-        padding-right: 0px;
-    }
-  }
+
 .subscribe{
     background-color: #000;
     color: #fff;
     padding: 12px 12px;
     padding-bottom: 8vw;
+    
 }
-.subscribe .heading{
+.subscribe .subscribe-heading{
     opacity: 0.7;
+    font-size: 14px;
+}
+.subscribe span{
+    font-size: 16px;
 }
 .footer{
     display: flex;
@@ -229,5 +265,133 @@ button{
     gap: 20px;
     background-color: #000;
     color: white;
-    padding: 1vw 1dvh;
+    padding: 1vw 1vh;
+}
+.left .copy{
+    font-size: 18px;
+}
+.left .time-stamp{
+    font-size: 16px;
+}
+.right span{
+    font-size: 14px;
+}
+@media (max-width:1280px) {
+    #nav a{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 16px;
+        
+    }
+    .left .time-stamp{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:1280px) and (min-width: 1024px){
+    .about .let{
+        font-size: 14px;
+    }
+    .subscribe span{
+        font-size: 14px;
+    }
+    .left .copy{
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 1024px) and (min-width:768px) {
+    #nav {
+        padding: 27px 24px;
+    }
+    #heading .secondText{
+        margin-left: 0px;
+    }
+    .about span{
+        font-size: 12px;
+    }
+    .left .copy{
+        font-size: 16px;
+    }
+  }
+
+@media (max-width: 768px) {
+    .about {
+      display: grid;
+      padding-left: 24px;
+    }
+    .about-me{
+        width:90%;
+        padding-right: 0px;
+    }
+    .about img{
+        height: 240px;
+        width: 240px;
+    }
+    .about .let{
+        font-size: 12px;
+    }
+    .last-footer{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    
+  }
+ 
+@media (max-width:1024px) {
+    .about img{
+        height: 192px;
+        width: 192px;
+    }
+    .about{
+        gap: 30px;
+        padding-left:8vw;
+    } 
+    .subscribe-heading{
+        font-size: 12px;
+    }  
+    .subscribe span{
+        font-size: 12px;
+    }
+  }
+
+  @media (min-width:1024px) {
+    /* .blockText .loco h5{
+        font-size: 14px;
+    } */
+    .firstfooter{
+        font-size: 12px;
+    }
+    
+}
+@media (max-width:768px) {
+    .circle{
+        display: none;
+    }
+    .hero-footer{
+        gap: 40%;
+    }
+    
+}
+@media  (max-width: 1024px) and (min-width:768px) {
+    #nav {
+        padding: 27px 24px;
+    }
+    #heading .secondText{
+        margin-left: 24px;
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .second .elem .sec-heading{
+        font-size: 60px;
+    }
+    
+}
+@media (max-width:640px) {
+    .second .elem .sec-heading{
+        font-size: 48px;
+    }   
 }
